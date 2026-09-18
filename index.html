@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IIUM Energy Club (IEC) | Innovating Sustainable Energy</title>
-    <!-- Tailwind CSS -->
+    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -28,7 +28,7 @@
             }
         }
     </script>
-    <!-- Google Fonts & Font Awesome -->
+    <!-- Google Fonts & Font Awesome Icons -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -58,14 +58,10 @@
                 <!-- IEC Brand Logo -->
                 <a href="#" class="flex items-center gap-3 group">
                     <div class="relative w-12 h-12 flex items-center justify-center rounded-full bg-slate-900 shadow-md group-hover:scale-105 transition-transform duration-300">
-                        <!-- Custom IEC SVG Logo representation -->
                         <svg class="w-10 h-10" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="50" cy="50" r="46" fill="#0F172A" stroke="#00875A" stroke-width="3"/>
-                            <!-- Green Leaf Arc -->
                             <path d="M 25,65 A 32,32 0 0,1 65,25 A 32,32 0 0,1 75,35" stroke="#00875A" stroke-width="6" stroke-linecap="round"/>
-                            <!-- Gear Outline -->
                             <path d="M 50,30 L53,35 L59,33 L60,39 L66,40 L64,46 L69,49 L65,54 L69,59 L63,60 L62,66 L56,64 L53,69 L49,64 L44,66 L43,60 L37,59 L40,53 L36,49 L41,45 L39,39 L45,38 Z" fill="none" stroke="#64748B" stroke-width="2"/>
-                            <!-- Gold Lightning Bolt -->
                             <path d="M54 22 L36 50 L48 50 L42 78 L64 44 L51 44 Z" fill="#FFC72C" stroke="#D4A017" stroke-width="1.5" stroke-linejoin="round"/>
                         </svg>
                     </div>
@@ -96,7 +92,7 @@
                     </button>
                 </div>
 
-                <!-- Mobile Menu Hamburger Button -->
+                <!-- Mobile Navigation Toggle Button -->
                 <div class="flex md:hidden">
                     <button id="mobile-menu-btn" onclick="toggleMobileMenu()" class="text-slate-700 p-2 rounded-lg hover:bg-emerald-50 focus:outline-none">
                         <i class="fa-solid fa-bars text-2xl" id="menu-icon"></i>
@@ -120,7 +116,6 @@
     </header>
 
     <section class="relative overflow-hidden bg-gradient-to-br from-slate-900 via-iec-darkgreen to-slate-950 text-white py-20 lg:py-32">
-        <!-- Glowing background blobs -->
         <div class="absolute -top-24 -left-24 w-96 h-96 bg-iec-green/30 rounded-full blur-3xl pointer-events-none"></div>
         <div class="absolute bottom-0 right-0 w-96 h-96 bg-iec-gold/10 rounded-full blur-3xl pointer-events-none"></div>
 
@@ -153,7 +148,7 @@
                     <div class="bg-gradient-to-tr from-emerald-900/60 to-slate-800/80 backdrop-blur-xl border border-white/10 rounded-3xl p-8 shadow-2xl space-y-6">
                         <div class="flex items-center justify-between border-b border-white/10 pb-4">
                             <span class="text-xs uppercase font-bold tracking-widest text-emerald-400"><i class="fa-solid fa-chart-line mr-2"></i>IEC Impact Tracker</span>
-                            <span class="text-xs bg-emerald-500/20 text-emerald-300 px-3 py-1 rounded-full border border-emerald-500/30">Active 2026/2027</span>
+                            <span class="text-xs bg-emerald-500/20 text-emerald-300 px-3 py-1 rounded-full border border-emerald-500/30">Active Term</span>
                         </div>
                         <div class="grid grid-cols-2 gap-4">
                             <div class="bg-slate-900/50 p-4 rounded-2xl border border-white/5">
@@ -239,13 +234,12 @@
                 </p>
             </div>
 
-            <!-- Mainboard Cards Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 
                 <!-- Member 1: ADAM -->
                 <div class="bg-slate-800/80 rounded-3xl overflow-hidden border border-slate-700/60 hover:border-iec-green transition-all duration-300 shadow-xl group">
                     <div class="relative h-80 overflow-hidden bg-gradient-to-b from-amber-900/40 via-amber-800/60 to-slate-900">
-                        <img src="https://i.ibb.co/6P0hS2L/adam-president.png" alt="Adam - President" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x800/0f172a/ffffff?text=ADAM+President'">
+                        <img src="adam.pres.png" alt="Adam - President" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x800/0f172a/ffffff?text=ADAM+President'">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
                         <div class="absolute top-4 right-4 bg-iec-gold text-slate-900 text-xs font-black px-3 py-1 rounded-full shadow-md">
                             President
@@ -267,7 +261,7 @@
                 <!-- Member 2: AZIM -->
                 <div class="bg-slate-800/80 rounded-3xl overflow-hidden border border-slate-700/60 hover:border-iec-green transition-all duration-300 shadow-xl group">
                     <div class="relative h-80 overflow-hidden bg-gradient-to-b from-emerald-900/40 via-emerald-800/60 to-slate-900">
-                        <img src="https://i.ibb.co/k079V9D/azim-vp1.png" alt="Azim - Vice President 1" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x800/0f172a/ffffff?text=AZIM+VP+1'">
+                        <img src="azim.vp1.png" alt="Azim - Vice President 1" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x800/0f172a/ffffff?text=AZIM+VP+1'">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
                         <div class="absolute top-4 right-4 bg-emerald-500 text-slate-950 text-xs font-black px-3 py-1 rounded-full shadow-md">
                             Vice President 1
@@ -289,7 +283,7 @@
                 <!-- Member 3: HAQIMI -->
                 <div class="bg-slate-800/80 rounded-3xl overflow-hidden border border-slate-700/60 hover:border-iec-green transition-all duration-300 shadow-xl group">
                     <div class="relative h-80 overflow-hidden bg-gradient-to-b from-rose-900/40 via-rose-800/60 to-slate-900">
-                        <img src="https://i.ibb.co/kGqY5zD/haqimi-vp2.png" alt="Haqimi - Vice President 2" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x800/0f172a/ffffff?text=HAQIMI+VP+2'">
+                        <img src="haq.vp2.png" alt="Haqimi - Vice President 2" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x800/0f172a/ffffff?text=HAQIMI+VP+2'">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
                         <div class="absolute top-4 right-4 bg-rose-500 text-white text-xs font-black px-3 py-1 rounded-full shadow-md">
                             Vice President 2
@@ -311,7 +305,7 @@
                 <!-- Member 4: IRMA -->
                 <div class="bg-slate-800/80 rounded-3xl overflow-hidden border border-slate-700/60 hover:border-iec-green transition-all duration-300 shadow-xl group">
                     <div class="relative h-80 overflow-hidden bg-gradient-to-b from-amber-900/40 via-amber-800/60 to-slate-900">
-                        <img src="https://i.ibb.co/3s3MpxW/irma-sec1.png" alt="Irma - Secretary 1" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x800/0f172a/ffffff?text=IRMA+Secretary+1'">
+                        <img src="irma.sr1.png" alt="Irma - Secretary 1" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x800/0f172a/ffffff?text=IRMA+Secretary+1'">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
                         <div class="absolute top-4 right-4 bg-amber-500 text-slate-950 text-xs font-black px-3 py-1 rounded-full shadow-md">
                             Secretary 1
@@ -333,7 +327,7 @@
                 <!-- Member 5: AUNI -->
                 <div class="bg-slate-800/80 rounded-3xl overflow-hidden border border-slate-700/60 hover:border-iec-green transition-all duration-300 shadow-xl group">
                     <div class="relative h-80 overflow-hidden bg-gradient-to-b from-blue-900/40 via-blue-800/60 to-slate-900">
-                        <img src="https://i.ibb.co/Xz952pX/auni-sec2.png" alt="Auni - Secretary 2" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x800/0f172a/ffffff?text=AUNI+Secretary+2'">
+                        <img src="auni.sr2.png" alt="Auni - Secretary 2" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x800/0f172a/ffffff?text=AUNI+Secretary+2'">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
                         <div class="absolute top-4 right-4 bg-sky-500 text-white text-xs font-black px-3 py-1 rounded-full shadow-md">
                             Secretary 2
@@ -355,7 +349,7 @@
                 <!-- Member 6: AIMAN -->
                 <div class="bg-slate-800/80 rounded-3xl overflow-hidden border border-slate-700/60 hover:border-iec-green transition-all duration-300 shadow-xl group">
                     <div class="relative h-80 overflow-hidden bg-gradient-to-b from-red-900/40 via-red-800/60 to-slate-900">
-                        <img src="https://i.ibb.co/YpTLHrt/aiman-fc1.png" alt="Aiman - Financial Controller 1" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x800/0f172a/ffffff?text=AIMAN+Financial+Controller+1'">
+                        <img src="aiman.fc1.png" alt="Aiman - Financial Controller 1" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x800/0f172a/ffffff?text=AIMAN+Financial+Controller+1'">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
                         <div class="absolute top-4 right-4 bg-iec-gold text-slate-950 text-xs font-black px-3 py-1 rounded-full shadow-md">
                             FC 1
@@ -377,7 +371,7 @@
                 <!-- Member 7: FATIMAH -->
                 <div class="bg-slate-800/80 rounded-3xl overflow-hidden border border-slate-700/60 hover:border-iec-green transition-all duration-300 shadow-xl group md:col-span-2 lg:col-span-1 lg:col-start-2">
                     <div class="relative h-80 overflow-hidden bg-gradient-to-b from-pink-900/40 via-pink-800/60 to-slate-900">
-                        <img src="https://i.ibb.co/LnsRkW3/fatimah-fc2.png" alt="Fatimah - Financial Controller 2" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x800/0f172a/ffffff?text=FATIMAH+Financial+Controller+2'">
+                        <img src="fatimah.fc2.png" alt="Fatimah - Financial Controller 2" class="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://placehold.co/600x800/0f172a/ffffff?text=FATIMAH+Financial+Controller+2'">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent"></div>
                         <div class="absolute top-4 right-4 bg-pink-500 text-white text-xs font-black px-3 py-1 rounded-full shadow-md">
                             FC 2
@@ -407,7 +401,6 @@
                     <h2 class="text-xs font-bold text-iec-green uppercase tracking-widest mb-2">Our Key Activities</h2>
                     <h3 class="text-3xl sm:text-4xl font-extrabold text-slate-900">IEC Initiatives & Divisions</h3>
                 </div>
-                <!-- Filter buttons -->
                 <div class="flex flex-wrap gap-2">
                     <button onclick="filterProjects('all')" class="project-btn px-4 py-2 text-xs font-bold rounded-full bg-iec-green text-white shadow-sm transition-all">All</button>
                     <button onclick="filterProjects('tech')" class="project-btn px-4 py-2 text-xs font-bold rounded-full bg-slate-100 text-slate-600 hover:bg-slate-200 transition-all">Technical</button>
@@ -416,7 +409,6 @@
             </div>
 
             <div class="grid md:grid-cols-3 gap-8">
-                <!-- Initiative Card 1 -->
                 <div class="project-card tech bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:shadow-lg transition-all">
                     <div class="w-12 h-12 bg-emerald-100 text-iec-green rounded-xl flex items-center justify-center text-xl mb-4">
                         <i class="fa-solid fa-solar-panel"></i>
@@ -426,7 +418,6 @@
                     <p class="text-slate-600 text-sm">Evaluating energy consumption across IIUM faculties and designing photovoltaic solar solutions for campus sustainability.</p>
                 </div>
 
-                <!-- Initiative Card 2 -->
                 <div class="project-card tech bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:shadow-lg transition-all">
                     <div class="w-12 h-12 bg-amber-100 text-amber-700 rounded-xl flex items-center justify-center text-xl mb-4">
                         <i class="fa-solid fa-gas-pump"></i>
@@ -436,7 +427,6 @@
                     <p class="text-slate-600 text-sm">Exploring alternative fuel blendings and clean combustion technologies to minimize carbon footprints.</p>
                 </div>
 
-                <!-- Initiative Card 3 -->
                 <div class="project-card outreach bg-slate-50 rounded-2xl p-6 border border-slate-200 hover:shadow-lg transition-all">
                     <div class="w-12 h-12 bg-sky-100 text-sky-700 rounded-xl flex items-center justify-center text-xl mb-4">
                         <i class="fa-solid fa-people-group"></i>
@@ -529,7 +519,7 @@
                 <i class="fa-solid fa-xmark"></i>
             </button>
             <h3 class="text-2xl font-black text-slate-900 mb-2">Join IIUM Energy Club</h3>
-            <p class="text-slate-600 text-sm mb-6">Fill in your details below to become an official member for session 2026/2027.</p>
+            <p class="text-slate-600 text-sm mb-6">Fill in your details below to become an official member.</p>
             
             <form onsubmit="handleFormSubmit(event)" class="space-y-4">
                 <div>
@@ -585,8 +575,14 @@
 
         function handleFormSubmit(event) {
             event.preventDefault();
-            alert('Thank you for registering with IIUM Energy Club! We will contact you soon.');
+            const notification = document.createElement('div');
+            notification.className = 'fixed bottom-5 right-5 bg-iec-green text-white px-6 py-4 rounded-2xl shadow-2xl z-50 font-bold text-sm transition-all transform translate-y-0';
+            notification.innerHTML = '<i class="fa-solid fa-circle-check mr-2"></i> Application submitted successfully!';
+            document.body.appendChild(notification);
             closeJoinModal();
+            setTimeout(() => {
+                notification.remove();
+            }, 4000);
         }
 
         // FAQ Toggle
